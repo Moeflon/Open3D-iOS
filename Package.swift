@@ -42,8 +42,6 @@ let package = Package(
         .target(
             name: "LinkOpen3D",
             dependencies: [
-                "NumPy-iOS",
-                "LAPACKE-iOS",
                 "Assimp",
                 "Faiss",
                 "IrrXML",
