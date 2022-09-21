@@ -55,7 +55,6 @@ let package = Package(
                 "png",
                 "pybind.a",
                 "TBB",
-                "BLAS-LAPACK-AppStore-Workaround",
             ],
             linkerSettings: [
                 .linkedLibrary("stdc++"),
