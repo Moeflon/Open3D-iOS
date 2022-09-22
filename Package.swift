@@ -25,7 +25,7 @@ let package = Package(
                 "TBB",
             ]),
     ],dependencies: [
-        .package(url: "https://github.com/raphaelmaguet/LAPACKE-iOS.git", .branch("main"))
+        .package(url: "https://github.com/kewlbear/BLAS-LAPACK-AppStore-Workaround.git", .branch("main"))
     ],
     targets: [
         .binaryTarget(name: "Assimp", url: "https://github.com/kewlbear/Open3D-iOS/releases/download/0.0.20220804014308/Assimp.xcframework.zip", checksum: "6904cc87d6001158a44caffb854e32b30e29adb606f46472d5f8ce00b9721a24"),
@@ -45,7 +45,6 @@ let package = Package(
             name: "LinkOpen3D",
             dependencies: [
                 "Assimp",
-                "LAPACKE-iOS",
                 "Faiss",
                 "IrrXML",
                 "JPEG",
@@ -58,6 +57,7 @@ let package = Package(
                 "png",
                 "pybind.a",
                 "TBB",
+                "BLAS-LAPACK-AppStore-Workaround",
             ],
             linkerSettings: [
                 .linkedLibrary("stdc++"),
