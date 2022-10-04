@@ -10,6 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "Open3D-iOS",
+            type: .dynamic,
             targets: [
                 "LinkOpen3D",
                 "Open3DSupport",
