@@ -22,9 +22,9 @@
 //  THE SOFTWARE.
 //
 
-#import <Python.h>
-#import <PythonSupport.h>
+// #import <Python.h>
+// #import <PythonSupport.h>
 
-PyMODINIT_FUNC PyInit_pybind(void);
+// PyMODINIT_FUNC PyInit_pybind(void);
 
-ForceLink(Open3D, PyInit_pybind())
+// ForceLink(Open3D, PyInit_pybind())
