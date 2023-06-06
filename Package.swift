@@ -26,7 +26,6 @@ let package = Package(
             ]),
     ],
     dependencies: [
-        //.package(url: "https://github.com/kewlbear/NumPy-iOS.git", .branch("main")),
         .package(url: "https://github.com/kewlbear/LAPACKE-iOS.git", .branch("main")),
         .package(url: "https://github.com/kewlbear/BLAS-LAPACK-AppStore-Workaround.git", .branch("main")),
     ],
@@ -47,7 +46,6 @@ let package = Package(
         .target(
             name: "LinkOpen3D",
             dependencies: [
-               // "NumPy-iOS",
                 "LAPACKE-iOS",
                 "Assimp",
                 "Faiss",
